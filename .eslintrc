@@ -1,0 +1,9 @@
+{
+  "extends": [ "standard", "standard-react", "es2015" ],
+  "parser": "babel-eslint",
+  "env": {},
+  "globals": {"expect": true},
+  "rules": {
+    "react/jsx-no-bind": "off"
+  }
+}
