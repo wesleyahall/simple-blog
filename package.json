@@ -1,14 +1,11 @@
 {
-  "name": "MFI-React-Redux-Boilerplate",
+  "name": "simple-blog",
   "version": "1.0.0",
-  "description": "Simple boilerplate package for Redux & React w/ Babel, Stylus, & testing support.",
+  "description": "Simple blog app",
   "main": "app/index.js",
-  "repository": "git@github.com:mfi-dev/react-redux-boilerplate.git",
+  "repository": "git@github.com:wesleyahall/simple-blog.git",
   "scripts": {
-    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "dev": "babel-node dev-server.js",
-    "test": "mocha --compilers js:babel-core/register,styl:mocha-stylus-compiler --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "start": "babel-node dev-server.js",
   },
   "author": "Wesley Hall",
   "license": "MIT",
