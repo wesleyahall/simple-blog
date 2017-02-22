@@ -9,7 +9,7 @@ class App extends React.Component {
       <div className='AppContainer'>
         <main>
           <h1 className='MainTitle'>
-            React simple starter
+            Simple Blog App
           </h1>
           {children}
         </main>
