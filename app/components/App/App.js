@@ -4,14 +4,13 @@ import '../../assets/lib/bootstrap.css'
 
 class App extends React.Component {
   render () {
-    const { children } = this.props
     return (
       <div className='AppContainer'>
         <main>
           <h1 className='MainTitle'>
             Simple Blog App
           </h1>
-          {children}
+          {this.props.children}
         </main>
       </div>
     )
