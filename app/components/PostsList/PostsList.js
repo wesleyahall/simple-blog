@@ -1,8 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchPosts } from '../../actions/FETCH_POSTS'
-import { Link } from 'react-router'
-import './PostsList.styl'
 
 class PostsList extends React.Component {
   componentWillMount () {
@@ -12,11 +10,6 @@ class PostsList extends React.Component {
   render () {
     return (
       <div className='PostsList'>
-        <div className='text-xs-right'>
-          <Link className='btn btn-primary' to='/posts/new'>
-            Add New Post
-          </Link>
-        </div>
         <ul>
           <li>post1</li>
           <li>post2</li>

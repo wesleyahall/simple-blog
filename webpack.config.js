@@ -34,7 +34,7 @@ var babelLoader = {
   test: /\.jsx?$/,
   query: {
     cacheDirectory: true,
-    plugins: ['transform-runtime', 'babel-plugin-add-module-exports'],
+    plugins: ['transform-runtime', 'babel-plugin-add-module-exports', 'react-hot-loader/babel'],
     presets: ['es2015', 'stage-0', 'react']
   }
 }
@@ -82,7 +82,7 @@ var development = Object.assign({
     loaders: [].concat(
       assetLoaders, {
         test: /\.jsx?$/,
-        loaders: ['react-hot'],
+        loaders: ['react-hot-loader/webpack'],
         include: path.join(__dirname, 'app')
       }, babelLoader
     ),
